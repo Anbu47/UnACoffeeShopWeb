@@ -6,7 +6,7 @@ using UnACoffeeShop.ShopItemClass.Food;
 
 namespace UnACoffeeShop.Factory
 {
-    public class UnAFoodFactory : UnAShopFactory
+    public class UnAFoodFactory
     {
         public enum FoodType
         {

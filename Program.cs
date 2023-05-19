@@ -1,5 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Builder;
+//using Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware;
+//using Swashbuckle.AspNetCore.Swagger.ISwaggerProvider;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSwaggerGen(); // add swagger to test out API
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
@@ -24,4 +28,6 @@ app.MapControllerRoute(
 
 app.MapFallbackToFile("index.html"); ;
 
+app.UseSwagger();
+app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1"); });
 app.Run();
