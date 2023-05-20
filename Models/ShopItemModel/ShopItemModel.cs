@@ -4,11 +4,11 @@ namespace UnACoffeeShop.Models.ShopItemModel
 {
     public class ShopItemModel
     {
-        [JsonPropertyName("id")] public int ID { get; set; }
-        [JsonPropertyName("type")] public string Type { get; set; }
-        [JsonPropertyName("name")] public string Name { get; set; }
-        [JsonPropertyName("description")] public string Description { get; set; }
-        [JsonPropertyName("basePrice")] public float BasePrice { get; set; }
-        [JsonPropertyName("imageUrl")] public string ImageURL { get; set; }
+        [JsonPropertyName("ID")] public int ID { get; set; }
+        [JsonPropertyName("Type")] public string Type { get; set; }
+        [JsonPropertyName("Name")] public string Name { get; set; }
+        [JsonPropertyName("Description")] public string Description { get; set; }
+        [JsonPropertyName("BasePrice")] public float BasePrice { get; set; }
+        [JsonPropertyName("ImageURL")] public string ImageURL { get; set; }
     } 
 }

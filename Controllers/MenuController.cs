@@ -20,7 +20,9 @@ public class MenuController : ControllerBase
     public ShopItemModel[]? GetAllData()
     {
         string jsonString = System.IO.File.ReadAllText(@$"{Menu}");
+        //Console.WriteLine(jsonString);
         ShopItemModel[]? data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString);
+        Console.WriteLine(data[1].Name);
         return data;
     }
     //Receive ID Item to respond data 

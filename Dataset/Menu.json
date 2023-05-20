@@ -54,5 +54,13 @@
     "Description": "Colder than cold coffee. ",
     "BasePrice": 1000.0,
     "ImageURL": "test"
+  },
+  {
+    "ID": 10,
+    "Type": "Drink",
+    "Name": "Ice Scream 2",
+    "Description": "test",
+    "BasePrice": 100.0,
+    "ImageURL": "test"
   }
 ]
