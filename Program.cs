@@ -8,7 +8,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("https://unacoffeeshopbe.onrender.com/");
+                          policy.AllowAnyOrigin();
                       });
 });
 builder.Services.AddSwaggerGen(); // add swagger to test out API
