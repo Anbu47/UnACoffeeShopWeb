@@ -1,8 +1,16 @@
 using Microsoft.AspNetCore.Builder;
 //using Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware;
 //using Swashbuckle.AspNetCore.Swagger.ISwaggerProvider;
-
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("https://unacoffeeshopbe.onrender.com/");
+                      });
+});
 builder.Services.AddSwaggerGen(); // add swagger to test out API
 // Add services to the container.
 
@@ -20,7 +28,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseCors(MyAllowSpecificOrigins);
 
 app.MapControllerRoute(
     name: "default",
