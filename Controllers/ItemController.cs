@@ -21,7 +21,6 @@ namespace UnACoffeeShop.Controllers
         {
             string jsonString = System.IO.File.ReadAllText(@$"{Item}");
             ShopItemModel[]? data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString);
-            Console.WriteLine(data[1].Name);
             return data;
         }
         //Receive ID Item to respond data 

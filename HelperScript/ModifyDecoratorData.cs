@@ -15,7 +15,7 @@ namespace UnACoffeeShop.HelperScript
 {
     public class ModifyDecoratorData
     {
-        public static void AddDecoratorData(int id, string name, float price, int groupID)
+        public static void AddDecoratorData(int id, string type, string name, float price, int groupID)
         {
             // Read the JSON file content
             string json = System.IO.File.ReadAllText(@$"{Decorator}");
@@ -27,6 +27,7 @@ namespace UnACoffeeShop.HelperScript
             DecoratorModel newDecoratorData = new DecoratorModel
             {
                 ID = id,
+                Type = type,
                 Name = name,
                 Price = price,
                 GroupID = groupID,

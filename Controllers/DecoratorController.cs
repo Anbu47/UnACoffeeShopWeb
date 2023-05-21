@@ -23,7 +23,6 @@ namespace UnACoffeeShop.Controllers
             {
                 string jsonString = System.IO.File.ReadAllText(@$"{Decorator}");
                 DecoratorModel[]? data = JsonSerializer.Deserialize<DecoratorModel[]>(jsonString);
-                Console.WriteLine(data[1].Name);
                 return data;
             }
             //Receive ID Decorator to respond data 
@@ -35,10 +34,10 @@ namespace UnACoffeeShop.Controllers
                 return data[id];
             }
             //Receive new ID Decorator Data 
-            [HttpPost("addDecoratorData{id}/{type}/{name}/{description}/{basePrice}/{imageURL}")]
-            public void AddDecoratorData(int id, string name, float price, int groupID)
+            [HttpPost("addDecoratorData{id}/{type}/{name}/{price}/{groupID}")]
+            public void AddDecoratorData(int id, string type, string name, float price, int groupID)
             {
-                ModifyDecoratorData.AddDecoratorData(id, name, price, groupID);
+                ModifyDecoratorData.AddDecoratorData(id, type, name, price, groupID);
             }
         }
     }
