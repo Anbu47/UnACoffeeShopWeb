@@ -10,5 +10,6 @@ namespace UnACoffeeShop.Models.ShopItemModel
         [JsonPropertyName("Description")] public string Description { get; set; }
         [JsonPropertyName("BasePrice")] public float BasePrice { get; set; }
         [JsonPropertyName("ImageURL")] public string ImageURL { get; set; }
+        [JsonPropertyName("Decorators")] public DecoratorModel[] Decorators { get; set; }
     } 
 }

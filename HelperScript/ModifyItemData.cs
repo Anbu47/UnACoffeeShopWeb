@@ -14,7 +14,7 @@ namespace UnACoffeeShop.HelperScript
 {
     public class ModifyItemData
     {
-        public static void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL)
+        public static void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
         {
             // Read the JSON file content
             string json = System.IO.File.ReadAllText(@$"{Item}");
@@ -31,6 +31,7 @@ namespace UnACoffeeShop.HelperScript
                 Description = description,
                 BasePrice = basePrice,
                 ImageURL = imageURL,
+                Decorators = decorators,
 
             };
 
