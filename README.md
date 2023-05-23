@@ -1,5 +1,7 @@
 # UnACoffeeShopWeb
 
+[Video Demo](https://drive.google.com/file/d/1KRMk8cdFWLX2J3EzyQjx-Ys2qkyh_syM/view?usp=sharing)
+
 The React file here no longer works, here is my repo to my UI
 
 https://github.com/Anbu47/GemoUnACoffeeShopUI_v2.0
@@ -7,7 +9,7 @@ https://github.com/Anbu47/GemoUnACoffeeShopUI_v2.0
 
 Frontend deployment
 
-https://silver-snickerdoodle-8e9fce.netlify.app/
+https://unacoffeeshopui.netlify.app
 
 
 Backend deployment
