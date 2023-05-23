@@ -1,7 +1,7 @@
 [
   {
     "ID": 1,
-    "Type": "Size",
+    "Type": "Drink",
     "Name": "Size S",
     "Price": 0,
     "GroupID": 1
@@ -9,16 +9,72 @@
   },
   {
     "ID": 2,
-    "Type": "Size",
+    "Type": "Drink",
     "Name": "Size M",
-    "Price": 0,
+    "Price": 0.5,
     "GroupID": 1
   },
   {
     "ID": 3,
-    "Type": "Size",
+    "Type": "Drink",
     "Name": "Size L",
-    "Price": 0,
+    "Price": 1,
     "GroupID": 1
+  },
+  {
+    "ID": 4,
+    "Type": "Drink",
+    "Name": "Size XL",
+    "Price": 1.5,
+    "GroupID": 1
+  },
+  {
+    "ID": 5,
+    "Type": "Drink",
+    "Name": "Whole Milk",
+    "Price": 0,
+    "GroupID": 2
+  },
+  {
+    "ID": 6,
+    "Type": "Drink",
+    "Name": "Almond Milk",
+    "Price": 0.5,
+    "GroupID": 2
+  },
+  {
+    "ID": 7,
+    "Type": "Drink",
+    "Name": "Whipped Cream",
+    "Price": 0.5,
+    "GroupID": 3
+  },
+  {
+    "ID": 8,
+    "Type": "Food",
+    "Name": "Cheese",
+    "Price": 0.5,
+    "GroupID": 4
+  },
+  {
+    "ID": 9,
+    "Type": "Food",
+    "Name": "Butter",
+    "Price": 0.5,
+    "GroupID": 4
+  },
+  {
+    "ID": 10,
+    "Type": "Food",
+    "Name": "Egg",
+    "Price": 1,
+    "GroupID": 5
+  },
+  {
+    "ID": 11,
+    "Type": "Food",
+    "Name": "Turkey",
+    "Price": 1,
+    "GroupID": 5
   }
 ]

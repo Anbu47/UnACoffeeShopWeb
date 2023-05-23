@@ -37,7 +37,7 @@
     "Name": "Bagel",
     "Description": "Supa yummy with sweet taste.",
     "BasePrice": 3.0,
-    "ImageURL": "ttps://drive.google.com/file/d/1YHV8eevr3liExRwyQ6qUWighLnm17i3P/preview"
+    "ImageURL": "https://drive.google.com/file/d/1YHV8eevr3liExRwyQ6qUWighLnm17i3P/preview"
   },
   {
     "ID": 5,
@@ -46,21 +46,5 @@
     "Description": "Homemade 100% with love.",
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1W084ze0CyALQCg3SF_tUhcLb8luZI4UO/preview"
-  },
-  {
-    "ID": 7,
-    "Type": "Drink",
-    "Name": "IceCream",
-    "Description": "Colder than cold coffee. ",
-    "BasePrice": 1000.0,
-    "ImageURL": "test"
-  },
-  {
-    "ID": 10,
-    "Type": "Drink",
-    "Name": "Ice Scream 2",
-    "Description": "test",
-    "BasePrice": 100.0,
-    "ImageURL": "test"
   }
 ]
