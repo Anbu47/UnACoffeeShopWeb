@@ -33,10 +33,10 @@ namespace UnACoffeeShop.Controllers
         }
 
         //Receive new ID Item Data
-        [HttpPost("addItemData{id}/{type}/{name}/{description}/{basePrice}/{imageURL}/{Decorators[]}")]
-        public void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] Decorators)
+        [HttpPost("addItemData{id}/{type}/{name}/{description}/{basePrice}/{imageURL}/{decorators}")]
+        public void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
         {
-            ModifyItemData.AddItemData(id, type, name, description, basePrice, imageURL, Decorators);
+            ModifyItemData.AddItemData(id, type, name, description, basePrice, imageURL, decorators);
         }
     }
 }
