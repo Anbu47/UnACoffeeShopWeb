@@ -8,10 +8,10 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.AllowAnyOrigin();
-                          policy.AllowAnyHeader();
-                          policy.AllowAnyMethod();
-                          policy.AllowCredentials();
+                          policy.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials();
                       });
 });
 builder.Services.AddSwaggerGen(); // add swagger to test out API
