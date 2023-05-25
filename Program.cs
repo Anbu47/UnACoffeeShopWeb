@@ -3,17 +3,16 @@ using Microsoft.AspNetCore.Builder;
 //using Swashbuckle.AspNetCore.Swagger.ISwaggerProvider;
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
+
+var allowAnyPolicy = "allowAnyPolicy";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy =>
-                      {
-                          policy.AllowAnyOrigin()
-                          .AllowAnyHeader()
-                          .AllowAnyMethod()
-                          .AllowCredentials();
-                      });
+    options.AddPolicy(allowAnyPolicy, builder => {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+
+    });
 });
+
 builder.Services.AddSwaggerGen(); // add swagger to test out API
 // Add services to the container.
 
