@@ -8,7 +8,7 @@ var allowAnyPolicy = "allowAnyPolicy";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(allowAnyPolicy, builder => {
-        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        builder.WithOrigins("http://localhost:3000/", "https://unacoffeeshopui.netlify.app/").AllowAnyMethod().AllowAnyHeader();
 
     });
 });
