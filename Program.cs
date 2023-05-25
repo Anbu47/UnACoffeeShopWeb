@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 //using Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware;
 //using Swashbuckle.AspNetCore.Swagger.ISwaggerProvider;
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 var allowAnyPolicy = "allowAnyPolicy";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(allowAnyPolicy, builder => {
-        builder.WithOrigins("http://localhost:3000/", "https://unacoffeeshopui.netlify.app/").AllowAnyMethod().AllowAnyHeader();
+    options.AddPolicy(allowAnyPolicy, policy => {
+        policy.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
 
     });
 });
@@ -30,7 +31,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseCors(MyAllowSpecificOrigins);
+app.UseCors(allowAnyPolicy);
 
 app.MapControllerRoute(
     name: "default",
