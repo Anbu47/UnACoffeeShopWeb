@@ -30,8 +30,8 @@ namespace UnACoffeeShop.Controllers
             public DecoratorModel GetDecoratorData(int id)
             {
                 string jsonString = System.IO.File.ReadAllText(@$"{Decorator}");
-                DecoratorModel[]? data = JsonSerializer.Deserialize<DecoratorModel[]>(jsonString);
-                return data[id];
+                var data = JsonSerializer.Deserialize<DecoratorModel[]>(jsonString).ToList();
+                return data.First(item => item.ID == id);
             }
             //Receive new ID Decorator Data 
             [HttpPost("addDecoratorData{id}/{type}/{name}/{price}/{groupID}")]

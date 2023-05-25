@@ -28,8 +28,8 @@ namespace UnACoffeeShop.Controllers
         public ShopItemModel GetItemData(int id)
         {
             string jsonString = System.IO.File.ReadAllText(@$"{Item}");
-            ShopItemModel[]? data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString);
-            return data[id];
+            var data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString).ToList();
+            return data.First(item => item.ID == id);
         }
 
         //Receive new ID Item Data
