@@ -1,71 +1,98 @@
-﻿import React, { Component } from 'react';
-import './Menu.css';
-export class Menu extends Component {
-    static displayName = Menu.name;
+﻿import React from "react";
+import "../styles/style.css";
 
-    render() {
-        return (
-            <div className="menu">
-                <div className="category">
-                    <h2>Drinks</h2>
-                    <ul>
-                        <li>
-                            <h3>Cold Coffee</h3>
-                            <p className="description">Intense and aromatic black coffee.</p>
-                            <p className="price">$2.00</p>
-                            <a href="/ColdCoffee" className="item-link">
-                                <button>+</button>
-                            </a>
-                        </li>
-                        <li>
-                            <h3>Hot Coffee</h3>
-                            <p className="description">Better taste with Chocolate sauce.</p>
-                            <p className="price">$2.00</p>
-                            <a href="/HotCoffee" className="item-link">
-                                <button>+</button>
-                            </a>
-                        </li>
-                        <li>
-                            <h3>Blended Coffee</h3>
-                            <p className="description">Try me! You will know what satisfying feeling is.</p>
-                            <p className="price">$3.00</p>
-                            <a href="./Drinks/BlendedCoffee.html" className="item-link">
-                                <button>+</button>
-                            </a>
-                        </li>
-                        <li>
-                            <h3>Milk Tea</h3>
-                            <p className="description">I swear this is better than your ex.</p>
-                            <p className="price">$2.25</p>
-                            <a href="./Drinks/MilkTea.html" className="item-link">
-                                <button>+</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+const ColdCoffee = () => {
+  const sizeOptions = [
+    { value: "0", label: "Size S" },
+    { value: "1", label: "Size M" },
+    { value: "2", label: "Size L" },
+    { value: "3", label: "Size XL" },
+  ];
 
-                <div className="category">
-                    <h2>Foods</h2>
-                    <ul>
-                        <li>
-                            <h3>Bagel</h3>
-                            <p className="description">Supa yummy with sweet taste.</p>
-                            <p className="price">$3.00</p>
-                            <a href="./Foods/Bagel.html" className="item-link">
-                                <button>+</button>
-                            </a>
-                        </li>
-                        <li>
-                            <h3>Sandwich</h3>
-                            <p className="description">Homemade 100% with love.</p>
-                            <p className="price">$3.00</p>
-                            <a href="./Foods/Sandwich.html" className="item-link">
-                                <button>+</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        );
-    }
-}
+  const whippedCreamOptions = [
+    { value: "0", label: "No" },
+    { value: "1", label: "Yes" },
+  ];
+
+  const milkOptions = [
+    { value: "0", label: "No" },
+    { value: "1", label: "Whole Milk" },
+    { value: "2", label: "Almond Milk" },
+  ];
+
+  return (
+    <>
+      <h2>Cold Coffee</h2>
+      <div className="iframe-container">
+        <iframe
+          title="Cold Coffee Recipe"
+          src="https://drive.google.com/file/d/19AYIBSD8_vu2Kt71BgosKrR0nD1JhoZy/preview"
+          width="640"
+          height="480"
+          allow="autoplay"
+        ></iframe>
+      </div>
+      <p>Refreshing and chilled beverage perfect for hot weather.</p>
+      <p>Item Price: $2.00</p>
+
+      <h2>Options</h2>
+      <SizeOptions options={sizeOptions} />
+      <WhippedCreamOptions options={whippedCreamOptions} />
+      <MilkOptions options={milkOptions} />
+
+      <label htmlFor="notes">Special Instructions:</label>
+      <textarea id="notes" name="notes"></textarea>
+
+      <a href="./cart">
+        <button type="submit">Add to Cart</button>
+      </a>
+    </>
+  );
+};
+
+const SizeOptions = ({ options }) => {
+  return (
+    <div>
+      <label htmlFor="sizeOptions">SIZE: </label>
+      <select id="sizeOptions">
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
+
+const WhippedCreamOptions = ({ options }) => {
+  return (
+    <div>
+      <label htmlFor="whippedCreamOptions">EXTRA WHIPPED CREAM? </label>
+      <select id="whippedCreamOptions">
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
+
+const MilkOptions = ({ options }) => {
+  return (
+    <div>
+      <label htmlFor="milkOptions">EXTRA MILK? </label>
+      <select id="milkOptions">
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
+
+export default ColdCoffee;
