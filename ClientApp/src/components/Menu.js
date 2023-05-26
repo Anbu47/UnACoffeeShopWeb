@@ -1,98 +1,77 @@
-﻿import React from "react";
-import "../styles/style.css";
+﻿import React, { Component } from "react";
+import "./Menu.css";
 
-const ColdCoffee = () => {
-  const sizeOptions = [
-    { value: "0", label: "Size S" },
-    { value: "1", label: "Size M" },
-    { value: "2", label: "Size L" },
-    { value: "3", label: "Size XL" },
-  ];
+class MenuItem extends Component {
+  render() {
+    const { title, description, price, link } = this.props;
 
-  const whippedCreamOptions = [
-    { value: "0", label: "No" },
-    { value: "1", label: "Yes" },
-  ];
+    return (
+      <li>
+        <h3>{title}</h3>
+        <p className="description">{description}</p>
+        <p className="price">{price}</p>
+        <a href={link} className="item-link">
+          <button>+</button>
+        </a>
+      </li>
+    );
+  }
+}
 
-  const milkOptions = [
-    { value: "0", label: "No" },
-    { value: "1", label: "Whole Milk" },
-    { value: "2", label: "Almond Milk" },
-  ];
+export class Menu extends Component {
+  static displayName = "Menu";
 
-  return (
-    <>
-      <h2>Cold Coffee</h2>
-      <div className="iframe-container">
-        <iframe
-          title="Cold Coffee Recipe"
-          src="https://drive.google.com/file/d/19AYIBSD8_vu2Kt71BgosKrR0nD1JhoZy/preview"
-          width="640"
-          height="480"
-          allow="autoplay"
-        ></iframe>
+  render() {
+    return (
+      <div className="menu">
+        <div className="category">
+          <h2>Drinks</h2>
+          <ul>
+            <MenuItem
+              title="Cold Coffee"
+              description="Intense and aromatic black coffee."
+              price="$2.00"
+              link="/ColdCoffee"
+            />
+            <MenuItem
+              title="Hot Coffee"
+              description="Better taste with Chocolate sauce."
+              price="$2.00"
+              link="/HotCoffee"
+            />
+            <MenuItem
+              title="Blended Coffee"
+              description="Try me! You will know what satisfying feeling is."
+              price="$3.00"
+              link="/Drinks/BlendedCoffee.html"
+            />
+            <MenuItem
+              title="Milk Tea"
+              description="I swear this is better than your ex."
+              price="$2.25"
+              link="/Drinks/MilkTea.html"
+            />
+          </ul>
+        </div>
+
+        <div className="category">
+          <h2>Foods</h2>
+          <ul>
+            <MenuItem
+              title="Bagel"
+              description="Supa yummy with sweet taste."
+              price="$3.00"
+              link="/Foods/Bagel.html"
+            />
+            <MenuItem
+              title="Sandwich"
+              description="Homemade 100% with love."
+              price="$3.00"
+              link="/Foods/Sandwich.html"
+            />
+          </ul>
+        </div>
       </div>
-      <p>Refreshing and chilled beverage perfect for hot weather.</p>
-      <p>Item Price: $2.00</p>
-
-      <h2>Options</h2>
-      <SizeOptions options={sizeOptions} />
-      <WhippedCreamOptions options={whippedCreamOptions} />
-      <MilkOptions options={milkOptions} />
-
-      <label htmlFor="notes">Special Instructions:</label>
-      <textarea id="notes" name="notes"></textarea>
-
-      <a href="./cart">
-        <button type="submit">Add to Cart</button>
-      </a>
-    </>
-  );
-};
-
-const SizeOptions = ({ options }) => {
-  return (
-    <div>
-      <label htmlFor="sizeOptions">SIZE: </label>
-      <select id="sizeOptions">
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-};
-
-const WhippedCreamOptions = ({ options }) => {
-  return (
-    <div>
-      <label htmlFor="whippedCreamOptions">EXTRA WHIPPED CREAM? </label>
-      <select id="whippedCreamOptions">
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-};
-
-const MilkOptions = ({ options }) => {
-  return (
-    <div>
-      <label htmlFor="milkOptions">EXTRA MILK? </label>
-      <select id="milkOptions">
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-};
-
-export default ColdCoffee;
+    );
+  }
+}
