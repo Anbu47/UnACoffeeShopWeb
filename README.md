@@ -7,7 +7,7 @@ This is my second time doing the web :b I love to listen to your feedback. Thank
 
 ## Frontend deployment
 
-https://unacoffeeshopui.netlify.app
+https://unacoffeeshopfe.onrender.com/
 
 
 ## Backend deployment
