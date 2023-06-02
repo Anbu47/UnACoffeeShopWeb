@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using UnACoffeeShop.Models.ShopItemModel;
 using UnACoffeeShop.HelperScript;
 using static UnACoffeeShop.Dataset.Routes;
+using Google.Cloud.Firestore;
 
 namespace UnACoffeeShop.Controllers
 {
@@ -17,26 +18,42 @@ namespace UnACoffeeShop.Controllers
     {
         //Respond Decorator.json data
         [HttpGet("getItemData")]
-        public ShopItemModel[]? GetAllData()
+        public async Task<ActionResult<IEnumerable<ShopItemModel>>> GetAllData()
         {
-            string jsonString = System.IO.File.ReadAllText(@$"{Item}");
-            ShopItemModel[]? data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString);
-            return data;
-        }
-        //Receive ID Item to respond data 
-        [HttpGet("getItemData{id:int}")]
-        public ShopItemModel GetItemData(int id)
-        {
-            string jsonString = System.IO.File.ReadAllText(@$"{Item}");
-            var data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString).ToList();
-            return data.First(item => item.ID == id);
+            // Create a Firestore client
+            FirestoreDb db = FirestoreDb.Create("unacoffeeshop");
+
+            // Reference the "Item" collection
+            CollectionReference itemsRef = db.Collection("Item");
+
+            // Query all documents in the "Item" collection
+            QuerySnapshot snapshot = await itemsRef.GetSnapshotAsync();
+
+            // Deserialize the documents to ShopItemModel objects
+            var dataList = new List<ShopItemModel>();
+            foreach (DocumentSnapshot document in snapshot.Documents)
+            {
+                ShopItemModel item = document.ConvertTo<ShopItemModel>();
+                dataList.Add(item);
+            }
+
+            return Ok(dataList);
         }
 
-        //Receive new ID Item Data
-        [HttpPost("addItemData{id}/{type}/{name}/{description}/{basePrice}/{imageURL}/{decorators}")]
-        public void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
-        {
-            ModifyItemData.AddItemData(id, type, name, description, basePrice, imageURL, decorators);
-        }
+        ////Receive ID Item to respond data 
+        //[HttpGet("getItemData{id:int}")]
+        //public ShopItemModel GetItemData(int id)
+        //{
+        //    string jsonString = System.IO.File.ReadAllText(@$"{Item}");
+        //    var data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString).ToList();
+        //    return data.First(item => item.ID == id);
+        //}
+
+        ////Receive new ID Item Data
+        //[HttpPost("addItemData{id}/{type}/{name}/{description}/{basePrice}/{imageURL}/{decorators}")]
+        //public void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
+        //{
+        //    ModifyItemData.AddItemData( type, name, description, basePrice, imageURL, decorators);
+        //}
     }
 }

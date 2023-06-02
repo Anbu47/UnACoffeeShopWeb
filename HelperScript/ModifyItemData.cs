@@ -14,7 +14,7 @@ namespace UnACoffeeShop.HelperScript
 {
     public class ModifyItemData
     {
-        public static void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
+        public static void AddItemData(string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
         {
             // Read the JSON file content
             string json = System.IO.File.ReadAllText(@$"{Item}");
@@ -25,7 +25,6 @@ namespace UnACoffeeShop.HelperScript
             // Create a new item
             ShopItemModel newItemData = new ShopItemModel
             {
-                ID = id,
                 Type = type,
                 Name = name,
                 Description = description,
@@ -44,26 +43,26 @@ namespace UnACoffeeShop.HelperScript
             // Write the updated JSON back to the file
             File.WriteAllText(@$"{Item}", updatedJson);
         }
-        public static void RemoveItemData(int id)
-        {
-            // Read the JSON file content
-            string json = File.ReadAllText(@$"{Item}");
+        //public static void RemoveItemData(int id)
+        //{
+        //    // Read the JSON file content
+        //    string json = File.ReadAllText(@$"{Item}");
 
-            // Deserialize JSON into an object
-            ShopItemModel[] itemData = JsonConvert.DeserializeObject<ShopItemModel[]>(json);
-            List<ShopItemModel> itemDataList = itemData.ToList();
+        //    // Deserialize JSON into an object
+        //    ShopItemModel[] itemData = JsonConvert.DeserializeObject<ShopItemModel[]>(json);
+        //    List<ShopItemModel> itemDataList = itemData.ToList();
 
-            ShopItemModel item = itemDataList.First(i => i.ID == id);
+        //    ShopItemModel item = itemDataList.First(i => i.ID == id);
 
-            // Remove item to the menu 
-            itemDataList.Remove(item);
+        //    // Remove item to the menu 
+        //    itemDataList.Remove(item);
 
-            // Serialize the updated item back to JSON
-            string updatedJson = JsonConvert.SerializeObject(itemDataList, Formatting.Indented);
+        //    // Serialize the updated item back to JSON
+        //    string updatedJson = JsonConvert.SerializeObject(itemDataList, Formatting.Indented);
 
-            // Write the updated JSON back to the file
-            File.WriteAllText(@$"{Item}", updatedJson);
-        }
+        //    // Write the updated JSON back to the file
+        //    File.WriteAllText(@$"{Item}", updatedJson);
+        //}
 
     }
 }
