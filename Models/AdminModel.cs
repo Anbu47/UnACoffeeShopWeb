@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-namespace UnACoffeeShop.Models.ShopItemModel
+namespace UnACoffeeShop.Models.ShopItemModelFirebase
 {
     public class AdminModel
     {

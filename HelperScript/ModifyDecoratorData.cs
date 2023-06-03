@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using Newtonsoft.Json;
 using UnACoffeeShop.ShopItemClass;
-using UnACoffeeShop.Models.ShopItemModel;
+using UnACoffeeShop.Models.ShopItemModelFirebase;
 using System.Xml.Linq;
 using static UnACoffeeShop.Dataset.Routes;
 using System.Text.RegularExpressions;

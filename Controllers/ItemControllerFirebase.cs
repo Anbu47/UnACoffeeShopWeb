@@ -5,35 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using UnACoffeeShop.Models.ShopItemModel;
 using UnACoffeeShop.HelperScript;
 using static UnACoffeeShop.Dataset.Routes;
 using Google.Cloud.Firestore;
+using UnACoffeeShop.Models.ShopItemModelFirebase;
 
 namespace UnACoffeeShop.Controllers
 {
     [ApiController]
     [Route("api/data")]
-    public class ItemController : ControllerBase
+    public class ItemControllerFirebase : ControllerBase
     {
         //Respond Decorator.json data
-        [HttpGet("getItemData")]
-        public async Task<ActionResult<IEnumerable<ShopItemModel>>> GetAllData()
+        [HttpGet("getItemDataFirebase")]
+        public async Task<ActionResult<IEnumerable<ShopItemModelFirebase>>> GetAllData()
         {
             // Create a Firestore client
             FirestoreDb db = FirestoreDb.Create("unacoffeeshop");
 
             // Reference the "Item" collection
-            CollectionReference itemsRef = db.Collection("Item");
+            CollectionReference itemsRef = db.Collection("Items");
 
             // Query all documents in the "Item" collection
             QuerySnapshot snapshot = await itemsRef.GetSnapshotAsync();
 
             // Deserialize the documents to ShopItemModel objects
-            var dataList = new List<ShopItemModel>();
+            var dataList = new List<ShopItemModelFirebase>();
             foreach (DocumentSnapshot document in snapshot.Documents)
             {
-                ShopItemModel item = document.ConvertTo<ShopItemModel>();
+                ShopItemModelFirebase item = document.ConvertTo<ShopItemModelFirebase>();
                 dataList.Add(item);
             }
 

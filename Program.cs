@@ -34,6 +34,8 @@ var firebaseClient = new FirebaseClient(
     {
         AuthTokenAsyncFactory = () => Task.FromResult("j5EN7yNCXAwZT3jf1RIQnsWhq5c1xcQmwDofUrZg")
     });
+Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "./unacoffeeshop-firebase-adminsdk-hd7r4-7ed881e393.json");
+
 builder.Services.AddSwaggerGen(); // add swagger to test out API
 // Add services to the container.
 

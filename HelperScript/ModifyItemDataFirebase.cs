@@ -6,25 +6,26 @@ using System.Threading.Tasks;
 using System.IO;
 using Newtonsoft.Json;
 using UnACoffeeShop.ShopItemClass;
-using UnACoffeeShop.Models.ShopItemModel;
 using System.Xml.Linq;
 using static UnACoffeeShop.Dataset.Routes;
+using UnACoffeeShop.Models.ShopItemModelFirebase;
 
 namespace UnACoffeeShop.HelperScript
 {
-    public class ModifyItemData
+    public class ModifyItemDataFirebase
     {
-        public static void AddItemData(string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
+        public static void AddItemData(string documentID, string type, string name, string description, float basePrice, string imageURL, List<int> decorators)
         {
             // Read the JSON file content
             string json = System.IO.File.ReadAllText(@$"{Item}");
 
             // Deserialize JSON into an object
-            ShopItemModel[] itemData = JsonConvert.DeserializeObject<ShopItemModel[]>(json);
-            List<ShopItemModel> itemDataList = itemData.ToList();
+            ShopItemModelFirebase[] itemData = JsonConvert.DeserializeObject<ShopItemModelFirebase[]>(json);
+            List<ShopItemModelFirebase> itemDataList = itemData.ToList();
             // Create a new item
-            ShopItemModel newItemData = new ShopItemModel
+            ShopItemModelFirebase newItemData = new ShopItemModelFirebase
             {
+                DocumentID = documentID,
                 Type = type,
                 Name = name,
                 Description = description,

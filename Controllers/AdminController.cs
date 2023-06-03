@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnACoffeeShop.HelperScript;
-using UnACoffeeShop.Models.ShopItemModel;
+using UnACoffeeShop.Models.ShopItemModelFirebase;
 
 namespace UnACoffeeShop.Controllers
 {
