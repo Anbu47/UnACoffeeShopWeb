@@ -38,5 +38,11 @@ namespace UnACoffeeShop.Controllers
         {
             ModifyItemData.AddItemData(id, type, name, description, basePrice, imageURL, decorators);
         }
+        //Remove ID Item Data
+        [HttpPost("removeItemData{id}")]
+        public void RemoveItemData(int id)
+        {
+            ModifyItemData.RemoveItemData(id);
+        }
     }
 }

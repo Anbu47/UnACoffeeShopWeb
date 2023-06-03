@@ -7,11 +7,41 @@
     "BasePrice": 2.0,
     "ImageURL": "https://drive.google.com/file/d/1MsB8k1b0x6GZxE0wGGYri0bjIA0wvRr6/preview",
     "Decorators": [
-      { "ID": 1 },
-      { "ID": 2 },
-      { "ID": 5 },
-      { "ID": 6 },
-      { "ID": 7 }
+      {
+        "ID": 1,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 2,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 5,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 6,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 7,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      }
     ]
   },
   {
@@ -22,13 +52,55 @@
     "BasePrice": 2.0,
     "ImageURL": "https://drive.google.com/file/d/19AYIBSD8_vu2Kt71BgosKrR0nD1JhoZy/preview",
     "Decorators": [
-      { "ID": 1 },
-      { "ID": 2 },
-      { "ID": 3 },
-      { "ID": 4 },
-      { "ID": 5 },
-      { "ID": 6 },
-      { "ID": 7 }
+      {
+        "ID": 1,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 2,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 3,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 4,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 5,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 6,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 7,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      }
     ]
   },
   {
@@ -39,13 +111,55 @@
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/15dhpDJiTl5eFSLh329g86M2FclqkgplT/preview",
     "Decorators": [
-      { "ID": 1 },
-      { "ID": 2 },
-      { "ID": 3 },
-      { "ID": 4 },
-      { "ID": 5 },
-      { "ID": 6 },
-      { "ID": 7 }
+      {
+        "ID": 1,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 2,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 3,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 4,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 5,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 6,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 7,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      }
     ]
   },
   {
@@ -56,13 +170,55 @@
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1JSh-fPk4jYr2fgx-jORvwZ1EBjyyUA-F/preview",
     "Decorators": [
-      { "ID": 1 },
-      { "ID": 2 },
-      { "ID": 3 },
-      { "ID": 4 },
-      { "ID": 5 },
-      { "ID": 6 },
-      { "ID": 7 }
+      {
+        "ID": 1,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 2,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 3,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 4,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 5,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 6,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 7,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      }
     ]
   },
   {
@@ -73,8 +229,20 @@
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1YHV8eevr3liExRwyQ6qUWighLnm17i3P/preview",
     "Decorators": [
-      { "ID": 8 },
-      { "ID": 9 }
+      {
+        "ID": 8,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 9,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      }
     ]
   },
   {
@@ -85,8 +253,20 @@
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1W084ze0CyALQCg3SF_tUhcLb8luZI4UO/preview",
     "Decorators": [
-      { "ID": 10 },
-      { "ID": 11 }
+      {
+        "ID": 10,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      },
+      {
+        "ID": 11,
+        "Type": null,
+        "Name": null,
+        "Price": 0.0,
+        "GroupID": 0
+      }
     ]
   }
 ]
