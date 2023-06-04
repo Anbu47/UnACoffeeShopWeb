@@ -20,7 +20,7 @@ https://unacoffeeshopbe.onrender.com/
 https://unacoffeeshopbe.onrender.com/swagger/
 
 
-## Here is my repo to my UI,  the React file here no longer works, 
+## Here is my repo to my UI,  the React file here no longer works
 
 https://github.com/Anbu47/GemoUnACoffeeShopUI_v2.0
 
