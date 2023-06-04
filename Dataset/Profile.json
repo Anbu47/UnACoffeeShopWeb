@@ -1,0 +1,29 @@
+[
+  {
+    "ProfileID": 0,
+    "Type": "Customer",
+    "Name": "Vo Thai Ngoc xinh dep",
+    "ImageURL": "https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-6/327276952_724229522451430_9012801269917324071_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IMlPVdaNn3kAX9x4Twv&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfAObVIq7KC9XvhOmQKCo_8qWu-IcIzjVn8-4xrvepAIRA&oe=647FB026",
+    "Password": "ThaiNgociscute",
+    "Address": "On the Earth",
+    "Rating": 0
+  },
+  {
+    "ProfileID": 1,
+    "Type": "Staff",
+    "Name": "Vo Thai Ngoc de thuong",
+    "ImageURL": "https://scontent.fsgn5-14.fna.fbcdn.net/v/t1.6435-9/41259133_273321099949303_1047417874953535488_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=zpp-gsBvjScAX9Zdunx&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfB9Mz9iHp-0AzCetKLVNRhe4aATYmfd6uzZHf4h6JKjMg&oe=64A30245",
+    "Password": "ThaiNgocsupercute",
+    "Address": "On the Moon",
+    "Rating": 0
+  },
+  {
+    "ProfileID": 2,
+    "Type": "Staff",
+    "Name": "Mach Dieu Bang",
+    "ImageURL": "",
+    "Password": "123456",
+    "Address": "",
+    "Rating": 0
+  }
+]
