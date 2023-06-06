@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using Newtonsoft.Json;
-using UnACoffeeShop.Models.ProfileModel;
+using UnACoffeeShop.Models.ShopItemModel;
 using static UnACoffeeShop.Dataset.Routes;
 namespace UnACoffeeShop.HelperScript
 {

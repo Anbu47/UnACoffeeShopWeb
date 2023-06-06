@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-namespace UnACoffeeShop.Models.ProfileModel
+namespace UnACoffeeShop.Models.ShopItemModel
 {
     public class ProfileModel
     {

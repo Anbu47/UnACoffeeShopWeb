@@ -1,0 +1,44 @@
+[
+	{
+		"CommentID": 5,
+		"ProfileID": 0,
+		"OrderID": 0,
+		"Datetime": "2023-05-30T10:15:00",
+		"Comment": "Great service and delicious coffee!"
+	},
+	{
+		"CommentID": 6,
+		"ProfileID": 1,
+		"OrderID": 0,
+		"Datetime": "2023-05-31T14:30:00",
+		"Comment": "Thank you, you are cutee so much!!"
+	},
+	{
+		"CommentID": 7,
+		"ProfileID": 0,
+		"OrderID": 1,
+		"Datetime": "2023-06-01T09:45:00",
+		"Comment": "Friendly staff and a wide variety of coffee options. Highly recommended!"
+	},
+	{
+		"CommentID": 8,
+		"ProfileID": 1,
+		"OrderID": 1,
+		"Datetime": "2023-06-02T15:45:00",
+		"Comment": "Thank you for your kind words! We strive to provide the best service."
+	},
+	{
+		"CommentID": 9,
+		"ProfileID": 0,
+		"OrderID": 2,
+		"Datetime": "2023-06-03T08:15:00",
+		"Comment": "The latte art was beautiful and the taste was exceptional."
+	},
+	{
+		"CommentID":  10,
+		"ProfileID": 1,
+		"OrderID": 2,
+		"Datetime": "2023-06-03T13:00:00",
+		"Comment": "We're glad you enjoyed your experience. Looking forward to serving you again!"
+	}
+]

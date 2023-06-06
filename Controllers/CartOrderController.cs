@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using UnACoffeeShop.Models.CartOrderModel;
 using UnACoffeeShop.Models.ShopItemModel;
 using UnACoffeeShop.HelperScript;
 using static UnACoffeeShop.Dataset.Routes;
@@ -36,11 +35,12 @@ namespace UnACoffeeShop.Controllers
 
         // Receive new CartOrder data
         [HttpPost("addCartOrderData{orderId}/{profileId}/{description}/{cost}/{status}")]
-        public void AddCartOrderData(int orderId, int profileId, string description, float cost, int status)
+        public void AddCartOrderData(int orderId, int profileId, string description, double cost, int status, int rating, string datetime)
         {
-            ModifyCartOrderData.AddCartOrderData(orderId, profileId, description, cost, status);
+            ModifyCartOrderData.AddCartOrderData(orderId, profileId, description, cost, status, rating, datetime);
         }
-        //Remove ID CartOrder Data
+
+        // Remove CartOrder data by ID
         [HttpPost("removeCartOrderData{id}")]
         public void RemoveCartOrderData(int id)
         {

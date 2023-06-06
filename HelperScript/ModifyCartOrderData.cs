@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using UnACoffeeShop.Models.CartOrderModel;
+using UnACoffeeShop.Models.ShopItemModel;
 using static UnACoffeeShop.Dataset.Routes;
+
 namespace UnACoffeeShop.HelperScript
 {
     public class ModifyCartOrderData
     {
-        public static void AddCartOrderData(int orderId, int profileId, string description, float cost, int status)
+        public static void AddCartOrderData(int orderId, int profileId, string description, double cost, int status, int rating, string datetime)
         {
             // Read the JSON file content
             string json = File.ReadAllText(@$"{CartOrder}");
@@ -24,7 +25,9 @@ namespace UnACoffeeShop.HelperScript
                 ProfileID = profileId,
                 Description = description,
                 Cost = cost,
-                Status = status
+                Status = status,
+                Rating = rating,
+                Datetime = datetime
             };
 
             // Add the new cart order to the list
