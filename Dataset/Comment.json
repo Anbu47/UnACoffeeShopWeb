@@ -4,11 +4,11 @@
 		"ProfileID": 0,
 		"OrderID": 0,
 		"Datetime": "2023-05-30T10:15:00",
-		"Comment": "Great service and delicious coffee!"
+		"Comment": "Great service and delicious sandwich!"
 	},
 	{
 		"CommentID": 6,
-		"ProfileID": 1,
+		"ProfileID": 2,
 		"OrderID": 0,
 		"Datetime": "2023-05-31T14:30:00",
 		"Comment": "Thank you, you are cutee so much!!"
@@ -22,7 +22,7 @@
 	},
 	{
 		"CommentID": 8,
-		"ProfileID": 1,
+		"ProfileID": 2,
 		"OrderID": 1,
 		"Datetime": "2023-06-02T15:45:00",
 		"Comment": "Thank you for your kind words! We strive to provide the best service."
@@ -36,7 +36,7 @@
 	},
 	{
 		"CommentID":  10,
-		"ProfileID": 1,
+		"ProfileID": 2,
 		"OrderID": 2,
 		"Datetime": "2023-06-03T13:00:00",
 		"Comment": "We're glad you enjoyed your experience. Looking forward to serving you again!"
