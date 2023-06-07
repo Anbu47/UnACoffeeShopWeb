@@ -1,7 +1,7 @@
 # UnACoffeeShopWeb
 This is my second time doing the web :b I love to listen to your feedback. Thank you <3
 
-[Video Demo](https://drive.google.com/file/d/1KRMk8cdFWLX2J3EzyQjx-Ys2qkyh_syM/view?usp=sharing)
+[Video Demo](https://drive.google.com/file/d/1R3n7isFPNmvr53efF2t3APRXZfUFrmGB/view?usp=drive_link)
 +
 [Outline Design](https://www.figma.com/file/C08HGId4N25EqXrEnkNHcz/Outline-GemoUnACoffeeShopWeb?type=whiteboard&t=7HnaAyY1nsSrPH7Y-1)
 
