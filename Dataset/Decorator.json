@@ -1,34 +1,5 @@
 [
   {
-    "ID": 1,
-    "Type": "Drink",
-    "Name": "Size S",
-    "Price": 0,
-    "GroupID": 1
-
-  },
-  {
-    "ID": 2,
-    "Type": "Drink",
-    "Name": "Size M",
-    "Price": 0.5,
-    "GroupID": 1
-  },
-  {
-    "ID": 3,
-    "Type": "Drink",
-    "Name": "Size L",
-    "Price": 1,
-    "GroupID": 1
-  },
-  {
-    "ID": 4,
-    "Type": "Drink",
-    "Name": "Size XL",
-    "Price": 1.5,
-    "GroupID": 1
-  },
-  {
     "ID": 5,
     "Type": "Drink",
     "Name": "Whole Milk",
