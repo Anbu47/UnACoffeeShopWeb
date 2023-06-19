@@ -1,0 +1,17 @@
+[
+	{
+		"ID": 1,
+		"Name": "Hot",
+		"Price": 0
+	},
+	{
+		"ID": 2,
+		"Name": "Cold",
+		"Price": 0.5
+	},
+	{
+		"ID": 3,
+		"Name": "Blended",
+		"Price": 1
+	}
+]

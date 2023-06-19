@@ -8,6 +8,14 @@ namespace UnACoffeeShop.Models.ShopItemModel
 
         [JsonPropertyName("ProfileID")] public int ProfileID { get; set; }
 
+        [JsonPropertyName("ItemID")] public int ItemID { get; set; }
+
+        [JsonPropertyName("Decorators")] public int[] DecoratorIDs { get; set; }
+
+        [JsonPropertyName("Size")] public int ItemSizeID { get; set; }
+
+        [JsonPropertyName("Style")] public int ItemStyleID { get; set; }
+
         [JsonPropertyName("Description")] public string Description { get; set; }
 
         [JsonPropertyName("Cost")] public double Cost { get; set; }

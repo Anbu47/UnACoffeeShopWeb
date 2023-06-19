@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using UnACoffeeShop.Models.ShopItemModel;
+using UnACoffeeShop.Models;
 using static UnACoffeeShop.Dataset.Routes;
 
 namespace UnACoffeeShop.HelperScript

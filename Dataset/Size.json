@@ -1,0 +1,22 @@
+[
+	{
+		"ID": 1,
+		"Name": "Size S",
+		"Price": 0
+	},
+	{
+		"ID": 2,
+		"Name": "Size M",
+		"Price": 0.5
+	},
+	{
+		"ID": 3,
+		"Name": "Size L",
+		"Price": 1
+	},
+	{
+		"ID": 4,
+		"Name": "Size XL",
+		"Price": 1.5
+	}
+]

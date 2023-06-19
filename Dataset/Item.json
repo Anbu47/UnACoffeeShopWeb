@@ -1,272 +1,103 @@
 [
   {
     "ID": 0,
+    "Style": 1,
+    "Sizes": [
+      1,
+      2
+    ],
     "Type": "Drink",
-    "Name": "Hot Coffee",
+    "Name": "Coffee",
     "Description": "Better taste with Chocolate sauce.",
     "BasePrice": 2.0,
     "ImageURL": "https://drive.google.com/file/d/1MsB8k1b0x6GZxE0wGGYri0bjIA0wvRr6/preview",
     "Decorators": [
-      {
-        "ID": 1,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 2,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 5,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 6,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 7,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      }
+      5,
+      6,
+      7
     ]
   },
   {
     "ID": 1,
+    "Style": 2,
+    "Sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
     "Type": "Drink",
-    "Name": "Cold Coffee",
+    "Name": "Coffee",
     "Description": "Refreshing and chilled beverage perfect for hot weather.",
     "BasePrice": 2.0,
     "ImageURL": "https://drive.google.com/file/d/19AYIBSD8_vu2Kt71BgosKrR0nD1JhoZy/preview",
     "Decorators": [
-      {
-        "ID": 1,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 2,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 3,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 4,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 5,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 6,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 7,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      }
+      5,
+      6,
+      7
     ]
   },
   {
     "ID": 2,
+    "Style": 3,
+    "Sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
     "Type": "Drink",
-    "Name": "Blended Coffee",
+    "Name": "Coffee",
     "Description": "Try me! You will know what satisfying feeling is.",
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/15dhpDJiTl5eFSLh329g86M2FclqkgplT/preview",
     "Decorators": [
-      {
-        "ID": 1,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 2,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 3,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 4,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 5,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 6,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 7,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      }
+      5,
+      6,
+      7
     ]
   },
   {
     "ID": 3,
+    "Style": 0,
+    "Sizes": null,
     "Type": "Drink",
     "Name": "Milk Tea",
     "Description": "I swear this is better than your ex.",
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1JSh-fPk4jYr2fgx-jORvwZ1EBjyyUA-F/preview",
     "Decorators": [
-      {
-        "ID": 1,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 2,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 3,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 4,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 5,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 6,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 7,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      }
+      5,
+      6,
+      7
     ]
   },
   {
     "ID": 4,
+    "Style": 0,
+    "Sizes": null,
     "Type": "Food",
     "Name": "Bagel",
     "Description": "Supa yummy with sweet taste.",
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1YHV8eevr3liExRwyQ6qUWighLnm17i3P/preview",
     "Decorators": [
-      {
-        "ID": 8,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 9,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      }
+      8,
+      9
     ]
   },
   {
     "ID": 5,
+    "Style": 0,
+    "Sizes": null,
     "Type": "Food",
     "Name": "Sandwich",
     "Description": "Homemade 100% with love.",
     "BasePrice": 3.0,
     "ImageURL": "https://drive.google.com/file/d/1W084ze0CyALQCg3SF_tUhcLb8luZI4UO/preview",
     "Decorators": [
-      {
-        "ID": 10,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      },
-      {
-        "ID": 11,
-        "Type": null,
-        "Name": null,
-        "Price": 0.0,
-        "GroupID": 0
-      }
+      10,
+      11
     ]
   }
 ]

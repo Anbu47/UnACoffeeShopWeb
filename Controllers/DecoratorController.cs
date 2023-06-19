@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using UnACoffeeShop.Models.ShopItemModel;
 using UnACoffeeShop.HelperScript;
 using static UnACoffeeShop.Dataset.Routes;
+using UnACoffeeShop.Models.ShopItemModel;
 
 namespace UnACoffeeShop.Controllers
 {

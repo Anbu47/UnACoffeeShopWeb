@@ -14,7 +14,7 @@ namespace UnACoffeeShop.HelperScript
 {
     public class ModifyItemData
     {
-        public static void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
+        public static void AddItemData(ShopItemModel newItemData)
         {
             // Read the JSON file content
             string json = System.IO.File.ReadAllText(@$"{Item}");
@@ -22,19 +22,6 @@ namespace UnACoffeeShop.HelperScript
             // Deserialize JSON into an object
             ShopItemModel[] itemData = JsonConvert.DeserializeObject<ShopItemModel[]>(json);
             List<ShopItemModel> itemDataList = itemData.ToList();
-            // Create a new item
-            ShopItemModel newItemData = new ShopItemModel
-            {
-                ID = id,
-                Type = type,
-                Name = name,
-                Description = description,
-                BasePrice = basePrice,
-                ImageURL = imageURL,
-                Decorators = decorators,
-
-            };
-
             // Add the new item to the menu 
             itemDataList.Add(newItemData);
 
@@ -44,6 +31,7 @@ namespace UnACoffeeShop.HelperScript
             // Write the updated JSON back to the file
             File.WriteAllText(@$"{Item}", updatedJson);
         }
+
         public static void RemoveItemData(int id)
         {
             // Read the JSON file content
@@ -64,6 +52,5 @@ namespace UnACoffeeShop.HelperScript
             // Write the updated JSON back to the file
             File.WriteAllText(@$"{Item}", updatedJson);
         }
-
     }
 }

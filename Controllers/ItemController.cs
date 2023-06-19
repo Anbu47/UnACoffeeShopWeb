@@ -23,6 +23,7 @@ namespace UnACoffeeShop.Controllers
             ShopItemModel[]? data = JsonSerializer.Deserialize<ShopItemModel[]>(jsonString);
             return data;
         }
+
         //Receive ID Item to respond data 
         [HttpGet("getItemData{id:int}")]
         public ShopItemModel GetItemData(int id)
@@ -33,11 +34,12 @@ namespace UnACoffeeShop.Controllers
         }
 
         //Receive new ID Item Data
-        [HttpPost("addItemData{id}/{type}/{name}/{description}/{basePrice}/{imageURL}/{decorators}")]
-        public void AddItemData(int id, string type, string name, string description, float basePrice, string imageURL, DecoratorModel[] decorators)
+        [HttpPost("addItemData")]
+        public void AddItemData([FromBody] ShopItemModel newItemData)
         {
-            ModifyItemData.AddItemData(id, type, name, description, basePrice, imageURL, decorators);
+            ModifyItemData.AddItemData(newItemData);
         }
+
         //Remove ID Item Data
         [HttpPost("removeItemData{id}")]
         public void RemoveItemData(int id)

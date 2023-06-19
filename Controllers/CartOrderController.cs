@@ -34,17 +34,23 @@ namespace UnACoffeeShop.Controllers
         }
 
         // Receive new CartOrder data
-        [HttpPost("addCartOrderData{orderId}/{profileId}/{description}/{cost}/{status}")]
-        public void AddCartOrderData(int orderId, int profileId, string description, double cost, int status, int rating, string datetime)
+        [HttpPost("addCartOrderData")]
+        public void AddCartOrderData([FromBody] CartOrderModel cartOrderModel)
         {
-            ModifyCartOrderData.AddCartOrderData(orderId, profileId, description, cost, status, rating, datetime);
+            ModifyCartOrderData.AddCartOrderData(cartOrderModel);
         }
 
         // Remove CartOrder data by ID
-        [HttpPost("removeCartOrderData{id}")]
+        [HttpDelete("removeCartOrderData{id}")]
         public void RemoveCartOrderData(int id)
         {
             ModifyCartOrderData.RemoveCartOrderData(id);
+        }
+
+        [HttpPatch("updateCartOrderData")]
+        public void UpdateCartOrderData([FromBody] CartOrderModel data)
+        {
+            ModifyCartOrderData.UpdateCartOrderData(data);
         }
     }
 }
